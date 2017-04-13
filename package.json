@@ -1,0 +1,17 @@
+{
+  "name": "app-007-front-end-web-vue-js",
+  "description": "demo front-end web site",
+  "author": "Wico Wen <is@wico.cc>",
+  "private": false,
+  "scripts": {
+    "dev": "node server"
+  },
+  "engines": {
+    "node": ">=7.0",
+    "npm": ">=4.0"
+  },
+  "dependencies": {
+    "vue-cli": "^2.8.1"
+  },
+  "devDependencies": {}
+}
