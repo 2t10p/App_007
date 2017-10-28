@@ -2,16 +2,15 @@ language: node_js
 node_js:
     - '8'
 
+before_script:
+  - cd front-site
+
 cache:
   directories:
     - node_modules
 
 install:
-  - npm install
-
-before_script:
-  - cd front-site
-
+  - npm install cross-env
 
 script:
   - npm test
