@@ -10,7 +10,7 @@ cache:
     - node_modules
 
 install:
-  - npm install cross-env
+  - npm install
 
 script:
   - npm test
