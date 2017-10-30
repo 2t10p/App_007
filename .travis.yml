@@ -2,6 +2,14 @@ language: node_js
 node_js:
     - '8'
 
+sudo: required
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+
 cache:
   directories:
     - node_modules
@@ -13,11 +21,15 @@ install:
 before_script:
 
 script:
+ - npm run unit
 
 after_script:
 
 branches:
   only:
     - master
+
+notifications:
+  email: false
 
 
