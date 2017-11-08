@@ -2,13 +2,7 @@ language: node_js
 node_js:
     - '8'
 
-sudo: required
-addons:
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
+sudo: false
 
 cache:
   directories:
@@ -30,6 +24,10 @@ branches:
     - master
 
 notifications:
-  email: false
+  email:
+    recipients:
+      - wico0628@gmail.com
+    on_success: change
+    on_failure: always
 
 
