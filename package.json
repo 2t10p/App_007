@@ -4,15 +4,11 @@
   "author": "Wico Wen <is@wico.cc>",
   "private": false,
   "scripts": {
-    "dev": "node server",
     "vue-cli": "/usr/bin/env node ./node_modules/.bin/vue"
   },
-  "engines": {
-    "node": ">=7.0",
-    "npm": ">=4.0"
-  },
+  "engines": {},
   "dependencies": {
-    "vue-cli": "^2.9.1"
+    "vue-cli": "^2.9.3"
   },
   "devDependencies": {}
 }
