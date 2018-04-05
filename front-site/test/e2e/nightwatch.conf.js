@@ -33,7 +33,7 @@ module.exports = {
         javascriptEnabled: true,
         acceptSslCerts: true,
         chromeOptions: {
-          args: ['headless', 'disable-gpu']
+          args: ['--headless', '--remote-debugging-port=9222', '--disable-gpu=true']
         }
       }
     },
