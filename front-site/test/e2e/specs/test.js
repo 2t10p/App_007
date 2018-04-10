@@ -8,8 +8,9 @@ module.exports = {
     // see nightwatch.conf.js
     const devServer = browser.globals.devServerURL
 
+    const HelloWorldPage = devServer + '/HelloWorld/'
     browser
-      .url(devServer)
+      .url(HelloWorldPage)
       .waitForElementVisible('#app', 5000)
       .assert.elementPresent('.hello')
       .assert.containsText('h1', 'Welcome to Your Vue.js App')
