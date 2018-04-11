@@ -6,7 +6,7 @@ module.exports = {
         .url(devServer)
         .waitForElementVisible('#app', 5000)
         .assert.elementPresent('.portal')
-        .assert.containsText('h1', 'Portal Page')
+        .assert.containsText('h1', 'Store components')
         .end()
     }
   }
