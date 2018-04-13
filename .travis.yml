@@ -2,13 +2,13 @@ dist: trusty
 sudo: required
 
 addons:
+  ssh_known_hosts:
+  - wico.cc
   apt:
     sources:
     - google-chrome
     packages:
     - google-chrome-stable
-  ssh_known_hosts:
-  - wico.cc
 
 language: node_js
 node_js:
@@ -44,6 +44,7 @@ script:
 - cd $WorkDIR
 
 after_script:
+
 deploy:
   skip_cleanup: true
   provider: script
