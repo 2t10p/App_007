@@ -41,10 +41,10 @@ script:
   - npm run lint
   - npm run unit
   - npm run e2e
-
-after_script:
   - npm run build
   - cd $WorkDIR
+
+after_script:
 
 deploy:
   skip_cleanup: true
