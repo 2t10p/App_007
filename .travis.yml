@@ -48,7 +48,6 @@ script:
 after_script:
 
 pre_deploy:
-- git fetch --unshallow
 
 deploy:
   skip_cleanup: true
