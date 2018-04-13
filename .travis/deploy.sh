@@ -26,6 +26,8 @@ if [ $TRAVIS_BRANCH == "master" ] ; then
     git fetch --unshallow
 
     git log
+    git branch
+    git config --get-all
 
     git push --force deploy master
 
