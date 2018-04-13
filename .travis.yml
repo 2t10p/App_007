@@ -38,11 +38,10 @@ script:
   - npm run e2e
 
 after_script:
-  - cd ~/
 
 deploy:
   provider: script
-  script: bash .travis/deploy.sh
+  script: bash ~/.travis/deploy.sh
   on:
     branch: master
 
