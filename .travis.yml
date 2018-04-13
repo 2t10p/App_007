@@ -19,7 +19,7 @@ cache:
   - node_modules
 
 before_install:
-- CurrentDIR=$(pwd)
+- WorkDIR=$(pwd)
 
 - openssl aes-256-cbc 
   -K $encrypted_026bd0f7d57c_key 
@@ -40,7 +40,7 @@ before_script:
 script:
   - npm run unit
   - npm run e2e
-
+  - cd $WorkDIR
 
 after_script:
 
