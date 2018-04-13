@@ -17,6 +17,7 @@ if [ $TRAVIS_BRANCH == "master" ] ; then
     ls -la
 
     ls -la ./front-site/
+    ls -la ./front-site/dist
 
 
     # commit compressed files and push it to remote
@@ -25,7 +26,7 @@ if [ $TRAVIS_BRANCH == "master" ] ; then
     cat .gitignore
 
     git add .
-    git add -f ./dist/
+    git add -f ./front-site/dist
 
     git status # debug
     git commit -m "Deploy compressed files"
