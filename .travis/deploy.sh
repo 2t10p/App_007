@@ -9,24 +9,22 @@ if [ $TRAVIS_BRANCH == "master" ] ; then
     eval "$(ssh-agent -s)"
     ssh-add ~/.ssh/travis_rsa
 
-    git init
-
     git remote add deploy "deploy@wico.cc:/var/www/portal.wico.cc/"
     git config user.name "Travis CI"
     git config user.email "travis@wico.cc"
 
     # commit compressed files and push it to remote
-    #rm -f .gitignore
+    rm -f .gitignore
     #cp .travis/deployignore .gitignore
 
     git add .
-    git add -f ./front-site/dist/
+    #git add -f ./front-site/dist/
 
-    #git status # debug
+    git status # debug
     git commit --quiet -m "Deploy compressed files"
 
     #git fetch --unshallow
-   
+
     git push --force deploy master
 
 else
