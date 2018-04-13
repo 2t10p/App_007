@@ -1,2 +1,3 @@
-# Frontend Website Demo 
-![App_007 travis-ci Status](https://travis-ci.org/wicowen/App_007.svg?branch=master)
+# Frontend Website Playground
+
+[![travis-ci status](https://travis-ci.org/wicowen/App_007.svg?branch=master)](https://travis-ci.org/wicowen/App_007/)
