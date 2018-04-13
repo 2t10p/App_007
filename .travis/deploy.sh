@@ -24,7 +24,7 @@ if [ $TRAVIS_BRANCH == "master" ] ; then
     #git status # debug
     git commit --quiet -m "Deploy compressed files"
 
-    #git fetch --unshallow
+    git fetch --unshallow
     git push --force deploy master
 
 else
