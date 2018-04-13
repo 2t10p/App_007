@@ -6,6 +6,6 @@ describe('Portal.vue', () => {
     const Constructor = Vue.extend(Portal)
     const vm = new Constructor().$mount()
     expect(vm.$el.querySelector('.portal h1').textContent)
-      .to.equal('Store components')
+      .to.equal('Portal components')
   })
 })
