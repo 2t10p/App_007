@@ -41,7 +41,6 @@ script:
   - npm run lint
   - npm run unit
   - npm run e2e
-  - npm run build
   - cd $WorkDIR
 
 after_script:
