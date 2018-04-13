@@ -2,7 +2,7 @@
 <div class="my-3 my-md-5 portal" >
   <div class="container">
     <div class="page-header">
-      <h1 class="page-title">Store components</h1>
+      <h1 class="page-title">Portal components</h1>
     </div>
     <div class="row row-cards">
       <div class="col-lg-3">

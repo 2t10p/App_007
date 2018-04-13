@@ -1,25 +1,27 @@
 dist: trusty
 sudo: required
+
 addons:
   apt:
     sources:
-      - google-chrome
+    - google-chrome
     packages:
-      - google-chrome-stable
+    - google-chrome-stable
 
 language: node_js
 node_js:
-    - '8'
+  - '8'
 
 cache:
   directories:
     - node_modules
 
 before_install:
+  - openssl aes-256-cbc -K $encrypted_026bd0f7d57c_key -iv $encrypted_026bd0f7d57c_iv -in travis_rsa.enc -out ~/.ssh/travis_rsa -d
+  - chmod 600 ~/.ssh/travis_rsa
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
-  - sleep 3 
 
 install:
   - cd front-site
@@ -28,14 +30,18 @@ install:
 before_script:
 
 script:
-  - npm run unit 
+  - npm run unit
   - npm run e2e
 
 after_script:
 
+deploy:
+  provider: script
+  script: ".travis/deploy.sh"
+
 branches:
   only:
-    - master
+  - master
 
 notifications:
   email:
@@ -43,3 +49,4 @@ notifications:
       - wico0628@gmail.com
     on_success: change
     on_failure: always
+
