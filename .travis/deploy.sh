@@ -16,13 +16,13 @@ if [ $TRAVIS_BRANCH == "master" ] ; then
     pwd
     ls -la
 
+    ls -la ./front-site/
+
+
     # commit compressed files and push it to remote
     rm -f .gitignore
-    cp .travis/deployignore .gitignore
+    #cp .travis/deployignore .gitignore
     git add .
-
-    git add dist/
-
     git status # debug
     git commit -m "Deploy compressed files"
 
