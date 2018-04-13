@@ -14,14 +14,15 @@ if [ $TRAVIS_BRANCH == "master" ] ; then
     git config user.email "travis@wico.cc"
 
     # commit compressed files and push it to remote
-    rm -f .gitignore
-    cp .travis/deployignore .gitignore
+    #rm -f .gitignore
+    #cp .travis/deployignore .gitignore
 
     git add .
     git add -f ./front-site/dist/
 
-    git status # debug
+    #git status # debug
     git commit --quiet -m "Deploy compressed files"
+    git log
 
     git fetch --unshallow
     git push --force deploy master
