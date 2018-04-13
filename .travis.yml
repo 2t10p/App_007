@@ -40,9 +40,9 @@ before_script:
 script:
   - npm run unit
   - npm run e2e
-  - cd $WorkDIR
 
 after_script:
+  - cd $WorkDIR
 
 deploy:
   provider: script
@@ -60,4 +60,3 @@ notifications:
       - wico0628@gmail.com
     on_success: change
     on_failure: always
-
