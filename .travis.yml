@@ -45,6 +45,7 @@ script:
 
 after_script:
 deploy:
+  skip_cleanup: true
   provider: script
   script:
     - bash .travis/deploy.sh
