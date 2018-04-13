@@ -40,13 +40,14 @@ before_script:
 script:
   - npm run unit
   - npm run e2e
-
-after_script:
   - cd $WorkDIR
 
+
+after_script:
 deploy:
   provider: script
-  script: bash ./.travis/deploy.sh
+  script:
+    - bash ./.travis/deploy.sh
   on:
     branch: master
 
