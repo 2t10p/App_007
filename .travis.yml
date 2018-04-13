@@ -36,12 +36,14 @@ before_script:
 script:
   - npm run unit
   - npm run e2e
+  - pwd
+  - cd ..
 
 after_script:
 
 deploy:
   provider: script
-  script: bash ~/.travis/deploy.sh
+  script: bash ./.travis/deploy.sh
   on:
     branch: master
 
