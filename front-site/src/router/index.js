@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+import NotFound from '@/components/NotFound'
 import Portal from '@/components/Portal'
 import Login from '@/components/Login'
 import HelloWorld from '@/components/HelloWorld'
@@ -23,7 +24,11 @@ export default new Router({
       path: '/HelloWorld',
       name: 'HelloWorld',
       component: HelloWorld
+    },
+    {
+      path: '*',
+      name: 'NotFound',
+      component: NotFound
     }
-
   ]
 })

@@ -2,9 +2,9 @@ module.exports = {
   'Login e2e tests': function (browser) {
     const devServer = browser.globals.devServerURL
 
-    const LoginPage = devServer + '/Login/'
+    const PageURL = devServer + '/Login/'
     browser
-      .url(LoginPage)
+      .url(PageURL)
       .waitForElementVisible('#app', 5000)
       .assert.elementPresent('.login')
       .assert.containsText('h1', 'Login Page')
