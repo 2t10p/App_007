@@ -7,7 +7,7 @@ module.exports = {
       .url(PageURL)
       .waitForElementVisible('#app', 5000)
       .assert.elementPresent('.login')
-      .assert.containsText('h1', 'Login Page')
+      .assert.containsText('.card-title', 'Login to your account')
       .end()
   }
 }

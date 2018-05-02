@@ -5,7 +5,7 @@ describe('Login.vue', () => {
   it('should render correct contents', () => {
     const Constructor = Vue.extend(Login)
     const vm = new Constructor().$mount()
-    expect(vm.$el.querySelector('.login h1').textContent)
-      .to.equal('Login Page')
+    expect(vm.$el.querySelector('.login .card-title').textContent)
+      .to.equal('Login to your account')
   })
 })
