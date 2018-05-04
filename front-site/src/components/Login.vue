@@ -33,6 +33,9 @@
       <div class="text-center text-muted">
         Don't have account yet? <a href="./register.html">Sign up</a>
       </div>
+      <div>
+        <button @click="authenticate('github')">auth Github</button>
+      </div>
     </div>
   </div>
 </div>
@@ -45,8 +48,16 @@ export default {
   data () {
     return {
     }
+  },
+  methods: {
+    authenticate: function (provider) {
+      this.$auth.authenticate(provider).then(function () {
+        // Execute application logic after successful social authentication
+      })
+    }
   }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
