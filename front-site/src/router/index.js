@@ -39,11 +39,11 @@ export default new Router({
 
 Vue.use(VueAxios, axios)
 Vue.use(VueAuthenticate, {
-  baseUrl: 'https://api.wico.cc',
+  baseUrl: 'https://portal.wico.cc',
   providers: {
     github: {
       clientId: '0a6bf39b89632031006b',
-      redirectUri: 'https://portal.wico.cc/auth/callback'
+      redirectUri: 'https://portal.wico.cc/'
     }
   }
 })

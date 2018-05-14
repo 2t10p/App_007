@@ -53,6 +53,7 @@ export default {
     authenticate: function (provider) {
       this.$auth.authenticate(provider).then(function () {
         // Execute application logic after successful social authentication
+        console.log(provider)
       })
     }
   }
