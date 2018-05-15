@@ -29,25 +29,6 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="mb-4 text-center">
-                  <img src="/static/demo/products/gopro-hero.jpg" alt="Apple iPhone 7 128GB" class="img-fluid">
-                </div>
-                <h4 class="card-title"><a href="javascript:void(0)">GoPro HERO6 Black</a></h4>
-                <div class="card-subtitle">
-                  GoPro
-                </div>
-                <div class="mt-5 d-flex align-items-center">
-                  <div class="product-price">
-                    <strong>$599</strong>
-                  </div>
-                  <div class="ml-auto">
-                    <a href="javascript:void(0)" class="btn btn-primary"><i class="fe fe-plus"></i> Add to cart</a>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
